@@ -1,9 +1,67 @@
 <!DOCTYPE html>
 <head>
-
+    <link type='text/css' rel='stylesheet' href='static/css/reservation.css'>
+    <meta name=”viewport” content=”width=device-width, initial-scale=1″>
 </head>
 <body>
     <%- include('./partials/navigation'); %>
-    <h1>Make a Reservation</h1>
+    <main>
+        <div id='col-1'>
+            <h3>Reserve a Table</h3>
+            <p>Please fill out the form and we will email you back within 24 business hours to confirm the reservation. If you want to reserve a table within 24 hours, please don't use this form as we might not be able to reply in time. Instead, contact us by telephone at (850) 542-7969 or drop by.</p>
+            <p>We are located on 221 E Zaragoza St, Pensacola, FL 32502.</p>
+            <img id='menu-img' src='https://i.pinimg.com/564x/43/54/6e/43546ed6859d715003c4045f3e5d55b4.jpg'>
+        </div>
+        <div id='col-2'>
+            <h3>Table Reservation Form</h3>
+            <form>
+                <div id='contactInfo'>
+                    <div id='name'>
+                        <h4>Name</h4>
+                        <input type='text' name='fName' id='fName' placeholder='First Name' required>
+                       
+                        <input type='text' name='lName' id='lName' placeholder='Last Name'required>
+                    </div>
+                    <div id='phone'>
+                        <h4>Phone</h4>
+                        <input type='number' name='phone' id='phone'>
+                    </div>
+                    <div id='email'>
+                        <h4>Email</h4>
+                        <input type='email' name='email' id='email'>
+                    </div>
+                </div>
+                <div id='resInfo'>
+                    <div id='date'>
+                        <h4>Date</h4>
+                        <input type="date" name='date' id='date'>
+                    </div> 
+                    <div id='time'>
+                        <h4>Time</h4>
+                        <input type="time" name='time' id='time'>
+                    </div>
+                    <div id='other'>
+                        <h4>I would like a table:</h4>
+                        <label for='inside'>Inside</label>
+                        <input type='radio' value='inside'>
+                        <label for='outside'>Outside</label>
+                        <input type='radio' value='outside'>
+                        <label for='noPref'>No Preference</label>
+                        <input type='radio' value='no-pref'>
+                    </div>
+                    <div id='numOfGuests'>
+                        <h4>How many persons?</h4>
+                        <input type='number' name='number' id='number' required>
+                    </div>
+                </div>
+                <div id='addDetails'>
+                    <h4>Additional Comments</h4>
+                    <input type='text' name='addDetails' id='addDetails' placeholder='E.g. special diet, allergies, etc.'>
+                </div>
+                <input type='submit' value='Submit Reservation Request'>
+            </form>
+        </div>
+    </main>
+    <%- include('./partials/footer'); %>
 </body>
 </html>

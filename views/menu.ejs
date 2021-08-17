@@ -1,24 +1,16 @@
 <!DOCTYPE html>
 <head>
     <link type='text/css' rel='stylesheet' href='static/css/main.css'>
-    <link rel="preconnect" href="https://fonts.gstatic.com">
-    <link href="https://fonts.googleapis.com/css2?family=Benne&family=Courgette&family=Sonsie+One&display=swap" rel="stylesheet">
+    <meta name=”viewport” content=”width=device-width, initial-scale=1″>
 </head>
 <body>
     <%- include('./partials/navigation'); %>
-    <div id='main-menu'>
-        <h1>Menu</h1>
-        <div id='menu-options'>
-            <h2 class='full'><a href=''>Full Lunches & Tea Set</a></h2>
-            <h2 class='tea-wine'><a href=''>Tea & Wine</a></h2>
-            <h2 class='catering'><a href=''>Catering</a></h2>
-        </div>
-    </div>
     <div id='all-menus'>
         <%- include('./partials/full-lunch'); %>
         <%- include('./partials/tea-wine') %>
         <%- include('./partials/catering') %>
     </div>
-    <script src='static/menu.js'></script>
+    <%- include('./partials/footer'); %>
+    <script type='text/javascript' src='public/menu.js'></script>
 </body>
 </html>

@@ -1,35 +1,55 @@
 <!DOCTYPE html>
 <head>
   <link type='text/css' rel='stylesheet' href='static/css/home.css'>
-  <link rel="preconnect" href="https://fonts.gstatic.com">
-  <link href="https://fonts.googleapis.com/css2?family=Benne&family=Courgette&family=Sonsie+One&display=swap" rel="stylesheet">
-  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-  <link href="https://fonts.googleapis.com/css2?family=Raleway:ital,wght@1,400;1,600&display=swap" rel="stylesheet">
+  <meta name=”viewport” content=”width=device-width, initial-scale=1″>
 </head>
 <body>
- <%- include('./partials/navigation'); %>
   <main>
-    <section>
-      <h3>Authentic English bistro located in the heart of Downtown Pensacola</h3>
-      <img id='lunch-img' src='static/images/Old English Creamery/Old English Creamery/OEC Lunch.jpg'> 
-    </section>
-    <section>
-       <img id='front-img' src='static/images/Old English Creamery/Hero Main.jpg'> 
-      <h3>Enjoy British cuisine in Pensacola's<br>historic district</h3>
-    </section>
-  </main><hr>
+    <div>
+      <div id='intro-text'>
+        <h1>Olde English Creamery</h1>
+        <h4>Authentic English tea enjoyed in the Deep South with a view of the Historic Village in Downtown Pensacola</h4>
+        <ul>
+          <li><a href='/menu'>View Menu</a></li>
+          <li><a href='/reservation'>Make Reservation</a></li>
+        </ul>
+      </div>
+    </div>
+  </main>
+
+  <div id='offers-div-1'>
+    <div id='offer-1'>
+      <div id='text-1'>
+        <h2>The Best of England in the Sunshine State</h2>
+        <p>A beautiful bistro offering English light lunches and Full Afternoon Tea. We offer home made scones, clotted cream and jam, dainty sandwiches, delicious cakes and lashings of tea. Also, pavlovas, cheesecakes, and homemade baked goods are available.</p>
+        <h4><a href='/menu'>View Menu</a></h4>
+      </div>
+      <img src='http://www.perfectpamper.com/wp-content/uploads/2017/09/Plan-To-Cook-Afternoon-Tea.jpg'>
+    </div>
+  </div>
+  
+  <div id='quote'>
+    <h1>“There are few hours in life more agreeable than the hour dedicated to the ceremony known as afternoon tea.”</h1>
+    <h5>- Henry James</h5>
+  </div>
+
+  <div id='offers-div-2'>
+    <div id='offer-2'>
+      <img src='https://68.media.tumblr.com/abc1b5a50242807ab7c7f2b70b85b591/tumblr_inline_ns4mnizklD1s27h5b_540.jpg'>
+      <div id='text-2'>
+        <h2>Party with Afternoon Tea</h2>
+        <p> We are available for birthday parties, bridal and baby showers, and other group parties! Please schedule your party in advance so we can ensure sufficient seating arrangements and decorations. </p>
+        <h4><a href='/reservation'>Make a Reservation</a></h4>
+      </div>
+    </div>
+    
+  </div>
 
   <section id='res-info'>
-    <h2>We encourage reservations and accept walk-ins!</h2>
-    <h4>We are open for normal operations for indoor seating in accordance with updated Florida regulations. We will continue with enhanced cleaning processes and all employees who are not vaccinated will wear masks. Customers and vaccinated employees have the option to wear masks.</h4>
-    <button><a href='/reservation'>Make a Reservation</a></button>
-  </section><hr>
-  <footer>
-    <p>Olde English Creamery</p>
-    <div>
-      <p>221 E Zaragoza St, Pensacola, FL 32502</p>
-      <p>(850) 542-7969</p>
-    </div> 
-  </footer>
+    <h3>We encourage reservations and accept walk-ins!</h3>
+    <p>We are open for normal operations for indoor seating in accordance with updated Florida regulations. We will continue with enhanced cleaning processes and all employees who are not vaccinated will wear masks. Customers and vaccinated employees have the option to wear masks.</p>
+  </section>
+  <%- include('./partials/footer'); %>
+  <script src='static/home.js'></script>
 </body>
 </html>

@@ -1,0 +1,36 @@
+@media (min-width: 320px) {
+  footer {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    text-align: center;
+    background-color: #c17767;
+  }
+  footer h2 {
+    font-size: 20px;
+    padding: 0;
+    margin: 0;
+  }
+  footer h4 {
+    color: #6a040f;
+    font-size: 16px;
+    padding: 10px;
+  }
+}
+
+@media (min-width: 768px) {
+  footer {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    text-align: center;
+    background-color: #c17767;
+    padding: 10px;
+  }
+
+  footer h4 {
+    color: #6a040f;
+    font-size: 20px;
+    padding: 10px;
+  }
+}
